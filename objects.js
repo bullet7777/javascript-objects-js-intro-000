@@ -1,10 +1,9 @@
-var playlist={chris:'good'}
-
-function updatePlaylist(playlist,artistName,songTitle){
-  playlist[artistName] = songTitle
-    return playlist
+var playlist={name:'title'}
+function updatePlaylist(object,artistName,songTitle){
+  object[artistName]='songTitle'
+return object
 }
-function  removeFromPlaylist(playlist, artistName){
-  delete playlist[artistName]
-  return playlist
+function removeFromPlaylist(object,artistName){
+  delete object[artistName]
+return object
 }
